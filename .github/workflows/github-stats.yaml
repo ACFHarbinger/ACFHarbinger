@@ -37,3 +37,5 @@ jobs:
           git add profile/*.svg
           git commit -m "Update GitHub statistics" || exit 0
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

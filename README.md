@@ -12,11 +12,8 @@
 
 ### My GitHub Statistics
 
-[![ACFHarbinger's GitHub stats](https://github-readme-stats.vercel.app/api?username=ACFHarbinger&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+![GitHub Stats](./profile/stats.svg)
+
+![Top Languages](./profile/languages.svg)
 
 </div>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ACFHarbinger&theme=radical&hide_border=false&hide=jupyter%20notebook&langs_count=20&size_weight=0&count_weight=1" alt="Top Languages by Activity" width="280" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ACFHarbinger&theme=radical&hide_border=false&hide=shell,hlsl,shaderlab,glsl,qml,lua&langs_count=20" alt="Top Languages by Code Size" width="280" />
-</p>
