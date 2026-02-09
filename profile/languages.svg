@@ -122,11 +122,11 @@
       <g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">Python</text>
-      <text x="215" y="34" class="lang-name">67.31%</text>
+      <text x="215" y="34" class="lang-name">59.76%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
-      <svg data-testid="lang-progress" width="67.31352767029706%">
+      <svg data-testid="lang-progress" width="59.75542994036709%">
         <rect
             height="8"
             fill="#3572A5"
@@ -141,11 +141,11 @@
   </g><g transform="translate(0, 40)">
     <g class="stagger" style="animation-delay: 600ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">TypeScript</text>
-      <text x="215" y="34" class="lang-name">11.44%</text>
+      <text x="215" y="34" class="lang-name">14.28%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
-      <svg data-testid="lang-progress" width="11.43711145218467%">
+      <svg data-testid="lang-progress" width="14.275199963375309%">
         <rect
             height="8"
             fill="#3178c6"
@@ -160,11 +160,11 @@
   </g><g transform="translate(0, 80)">
     <g class="stagger" style="animation-delay: 750ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">Rust</text>
-      <text x="215" y="34" class="lang-name">9.15%</text>
+      <text x="215" y="34" class="lang-name">11.42%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
-      <svg data-testid="lang-progress" width="9.1466049084205%">
+      <svg data-testid="lang-progress" width="11.41631036818758%">
         <rect
             height="8"
             fill="#dea584"
@@ -179,11 +179,11 @@
   </g><g transform="translate(0, 120)">
     <g class="stagger" style="animation-delay: 900ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">HTML</text>
-      <text x="215" y="34" class="lang-name">2.55%</text>
+      <text x="215" y="34" class="lang-name">3.18%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
-      <svg data-testid="lang-progress" width="2.5498301351495978%">
+      <svg data-testid="lang-progress" width="3.1825636397858093%">
         <rect
             height="8"
             fill="#e34c26"
@@ -198,11 +198,11 @@
   </g><g transform="translate(0, 160)">
     <g class="stagger" style="animation-delay: 1050ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">CSS</text>
-      <text x="215" y="34" class="lang-name">2.46%</text>
+      <text x="215" y="34" class="lang-name">3.07%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
-      <svg data-testid="lang-progress" width="2.462757540674762%">
+      <svg data-testid="lang-progress" width="3.073884214683176%">
         <rect
             height="8"
             fill="#663399"
@@ -217,11 +217,11 @@
   </g><g transform="translate(0, 200)">
     <g class="stagger" style="animation-delay: 1200ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">Kotlin</text>
-      <text x="215" y="34" class="lang-name">1.92%</text>
+      <text x="215" y="34" class="lang-name">2.39%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
-      <svg data-testid="lang-progress" width="2%">
+      <svg data-testid="lang-progress" width="2.3929439993944897%">
         <rect
             height="8"
             fill="#A97BFF"
@@ -236,7 +236,7 @@
   </g><g transform="translate(0, 240)">
     <g class="stagger" style="animation-delay: 1350ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">JavaScript</text>
-      <text x="215" y="34" class="lang-name">1.00%</text>
+      <text x="215" y="34" class="lang-name">1.25%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
@@ -255,7 +255,7 @@
   </g><g transform="translate(0, 280)">
     <g class="stagger" style="animation-delay: 1500ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">Java</text>
-      <text x="215" y="34" class="lang-name">0.99%</text>
+      <text x="215" y="34" class="lang-name">1.23%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
@@ -274,7 +274,7 @@
   </g><g transform="translate(0, 320)">
     <g class="stagger" style="animation-delay: 1650ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">QML</text>
-      <text x="215" y="34" class="lang-name">0.91%</text>
+      <text x="215" y="34" class="lang-name">1.13%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
@@ -292,15 +292,15 @@
     </g>
   </g><g transform="translate(0, 360)">
     <g class="stagger" style="animation-delay: 1800ms">
-      <text data-testid="lang-name" x="2" y="15" class="lang-name">R</text>
-      <text x="215" y="34" class="lang-name">0.87%</text>
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">Shell</text>
+      <text x="215" y="34" class="lang-name">0.54%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
       <svg data-testid="lang-progress" width="2%">
         <rect
             height="8"
-            fill="#198CE7"
+            fill="#89e051"
             rx="5" ry="5" x="0" y="0"
             class="lang-progress"
             style="animation-delay: 2100ms;"
@@ -311,15 +311,15 @@
     </g>
   </g><g transform="translate(0, 400)">
     <g class="stagger" style="animation-delay: 1950ms">
-      <text data-testid="lang-name" x="2" y="15" class="lang-name">Shell</text>
-      <text x="215" y="34" class="lang-name">0.43%</text>
+      <text data-testid="lang-name" x="2" y="15" class="lang-name">R</text>
+      <text x="215" y="34" class="lang-name">0.54%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
       <svg data-testid="lang-progress" width="2%">
         <rect
             height="8"
-            fill="#89e051"
+            fill="#198CE7"
             rx="5" ry="5" x="0" y="0"
             class="lang-progress"
             style="animation-delay: 2250ms;"
@@ -331,7 +331,7 @@
   </g><g transform="translate(0, 440)">
     <g class="stagger" style="animation-delay: 2100ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">Batchfile</text>
-      <text x="215" y="34" class="lang-name">0.32%</text>
+      <text x="215" y="34" class="lang-name">0.39%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
@@ -350,7 +350,7 @@
   </g><g transform="translate(0, 480)">
     <g class="stagger" style="animation-delay: 2250ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">Swift</text>
-      <text x="215" y="34" class="lang-name">0.28%</text>
+      <text x="215" y="34" class="lang-name">0.35%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
@@ -369,7 +369,7 @@
   </g><g transform="translate(0, 520)">
     <g class="stagger" style="animation-delay: 2400ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">Jupyter Notebook</text>
-      <text x="215" y="34" class="lang-name">0.26%</text>
+      <text x="215" y="34" class="lang-name">0.32%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
@@ -388,7 +388,7 @@
   </g><g transform="translate(0, 560)">
     <g class="stagger" style="animation-delay: 2550ms">
       <text data-testid="lang-name" x="2" y="15" class="lang-name">Makefile</text>
-      <text x="215" y="34" class="lang-name">0.12%</text>
+      <text x="215" y="34" class="lang-name">0.14%</text>
       
     <svg width="205" x="0" y="25">
       <rect rx="5" ry="5" x="0" y="0" width="205" height="8" fill="#ddd"></rect>
