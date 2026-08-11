@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=141321&height=180&section=header&text=Afonso%20Cruz%20Fernandes&fontSize=42&fontColor=38bdf8&animation=fadeIn&desc=Deep%20RL%20%E2%80%A2%20Operations%20Research%20%E2%80%A2%20Game%20Development&descSize=16&descColor=a9fef7&descAlign=50&descAlignY=64" width="100%" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=transparent&height=120&section=header&text=Afonso%20Cruz%20Fernandes&fontSize=42&fontColor=38bdf8&animation=fadeIn&desc=Deep%20RL%20%E2%80%A2%20Operations%20Research%20%E2%80%A2%20Game%20Development&descSize=16&descColor=a9fef7&descAlign=50&descAlignY=70" width="100%" alt="Header Banner" />
 
   <a href="mailto:afonso.fernandes100@gmail.com"><img src="https://img.shields.io/badge/Email-afonso.fernandes100%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://linkedin.com/in/afonso-cruz-fernandes-31a38612a"><img src="https://img.shields.io/badge/LinkedIn-Afonso%20Fernandes-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
