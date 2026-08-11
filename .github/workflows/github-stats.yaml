@@ -13,14 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Generate Stats Card
-        uses: readme-tools/github-readme-stats-action@v1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          card: stats
-          options: "username=ACFHarbinger&theme=radical&show_icons=true"
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }} # Use the automatic token
+          python-version: '3.x'
+
+      - name: Generate Stats Card
+        run: |
+          python3 generate_stats.py
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Generate Language Card
         uses: readme-tools/github-readme-stats-action@v1
@@ -28,7 +31,7 @@ jobs:
           card: top-langs
           options: "username=ACFHarbinger&theme=radical&langs_count=15"
           path: profile/languages.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Commit and Push
         run: |
