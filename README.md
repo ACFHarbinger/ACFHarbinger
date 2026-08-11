@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=141321&height=180&section=header&text=Afonso%20Cruz%20Fernandes&fontSize=42&fontColor=fe428e&animation=fadeIn&desc=Deep%20RL%20%E2%80%A2%20Operations%20Research%20%E2%80%A2%20Game%20Development&descSize=16&descColor=a9fef7&descAlign=50&descAlignY=64" width="100%" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=141321&height=180&section=header&text=Afonso%20Cruz%20Fernandes&fontSize=42&fontColor=38bdf8&animation=fadeIn&desc=Deep%20RL%20%E2%80%A2%20Operations%20Research%20%E2%80%A2%20Game%20Development&descSize=16&descColor=a9fef7&descAlign=50&descAlignY=64" width="100%" alt="Header Banner" />
 
   <a href="mailto:afonso.fernandes100@gmail.com"><img src="https://img.shields.io/badge/Email-afonso.fernandes100%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://linkedin.com/in/afonso-cruz-fernandes-31a38612a"><img src="https://img.shields.io/badge/LinkedIn-Afonso%20Fernandes-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -29,7 +29,7 @@
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
-  <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" alt="Swift" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <br/>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
   <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
@@ -49,5 +49,5 @@
   <br/><br/>
   <img src="./profile/languages.svg" alt="Top Languages" />
   <br/><br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ACFHarbinger&theme=radical&hide_border=false" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ACFHarbinger&theme=tokyonight&hide_border=false" alt="GitHub Streak" />
 </div>

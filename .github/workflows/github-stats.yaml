@@ -29,7 +29,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: "username=ACFHarbinger&theme=radical&langs_count=15"
+          options: "username=ACFHarbinger&theme=tokyonight&langs_count=15"
           path: profile/languages.svg
           token: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 

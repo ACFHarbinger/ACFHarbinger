@@ -58,7 +58,7 @@ def generate_svg(stats):
   <style>
     .header {{
       font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
-      fill: #fe428e;
+      fill: #38bdf8;
       animation: fadeInAnimation 0.8s ease-in-out forwards;
     }}
     .stat {{
@@ -75,10 +75,10 @@ def generate_svg(stats):
     }}
     .rank-text {{
       font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif;
-      fill: #fe428e;
+      fill: #38bdf8;
     }}
     .rank-circle {{
-      stroke: #fe428e;
+      stroke: #38bdf8;
       stroke-width: 4;
       fill: none;
     }}
