@@ -17,7 +17,19 @@ def get_stats():
     }
     repositories(first: 100, ownerAffiliations: OWNER) {
       totalCount
-      nodes { stargazerCount }
+      nodes {
+        name
+        stargazerCount
+        languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+          edges {
+            size
+            node {
+              name
+              color
+            }
+          }
+        }
+      }
     }
   }
 }''']
@@ -33,13 +45,38 @@ def get_stats():
         reviews = user['contributionsCollection']['totalPullRequestReviewContributions']
         stars = sum(r['stargazerCount'] for r in user['repositories']['nodes'])
         repos = user['repositories']['totalCount']
+        
+        # Calculate language stats
+        lang_sizes = {}
+        lang_colors = {}
+        for r in user['repositories']['nodes']:
+            if not r.get('languages'):
+                continue
+            for edge in r['languages']['edges']:
+                name = edge['node']['name']
+                color = edge['node']['color'] or "#858585"
+                size = edge['size']
+                lang_sizes[name] = lang_sizes.get(name, 0) + size
+                lang_colors[name] = color
+                
+        total_lang_size = sum(lang_sizes.values()) or 1
+        top_langs = []
+        for name, size in sorted(lang_sizes.items(), key=lambda x: x[1], reverse=True)[:12]:
+            pct = (size / total_lang_size) * 100
+            top_langs.append({
+                'name': name,
+                'pct': pct,
+                'color': lang_colors[name]
+            })
+
         return {
             'stars': stars,
             'commits': commits,
             'prs': prs,
             'issues': issues,
             'reviews': reviews,
-            'repos': repos
+            'repos': repos,
+            'langs': top_langs
         }
     except Exception as e:
         print(f"Error fetching stats: {e}")
@@ -49,10 +86,22 @@ def get_stats():
             'prs': 6,
             'issues': 705,
             'reviews': 1,
-            'repos': 64
+            'repos': 64,
+            'langs': [
+                {'name': 'Python', 'pct': 77.18, 'color': '#3572A5'},
+                {'name': 'TypeScript', 'pct': 9.37, 'color': '#3178c6'},
+                {'name': 'Rust', 'pct': 4.44, 'color': '#dea584'},
+                {'name': 'C++', 'pct': 3.13, 'color': '#f34b7d'},
+                {'name': 'HTML', 'pct': 0.99, 'color': '#e34c26'},
+                {'name': 'CSS', 'pct': 0.97, 'color': '#563d7c'},
+                {'name': 'QML', 'pct': 0.91, 'color': '#44a51c'},
+                {'name': 'Kotlin', 'pct': 0.72, 'color': '#A97BFF'},
+                {'name': 'TeX', 'pct': 0.51, 'color': '#3D6117'},
+                {'name': 'JavaScript', 'pct': 0.42, 'color': '#f1e05a'}
+            ]
         }
 
-def generate_svg(stats):
+def generate_stats_svg(stats):
     svg = f'''<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Afonso Cruz Fernandes's GitHub Stats">
   <title>Afonso Cruz Fernandes's GitHub Stats</title>
   <style>
@@ -66,13 +115,6 @@ def generate_svg(stats):
       fill: #a9fef7;
     }}
     .bold {{ font-weight: 700 }}
-    .icon {{
-      fill: #f8d000;
-    }}
-    .stk {{
-      stroke: #e4e2e2;
-      stroke-width: 1;
-    }}
     .rank-text {{
       font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif;
       fill: #38bdf8;
@@ -140,10 +182,63 @@ def generate_svg(stats):
 '''
     return svg
 
+def generate_languages_svg(stats):
+    langs = stats.get('langs', [])
+    card_height = 80 + len(langs) * 40
+    
+    items_svg = ""
+    for idx, l in enumerate(langs):
+        y_pos = idx * 40
+        pct_str = f"{l['pct']:.2f}%"
+        bar_width = max(2, int((l['pct'] / 100.0) * 205))
+        items_svg += f'''
+    <g transform="translate(0, {y_pos})">
+      <text x="25" y="15" class="lang-name">{l['name']}</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">{pct_str}</text>
+      <svg width="245" x="25" y="22">
+        <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
+        <rect rx="4" ry="4" x="0" y="0" width="{bar_width}" height="8" fill="{l['color']}"/>
+      </svg>
+    </g>'''
+
+    svg = f'''<svg width="300" height="{card_height}" viewBox="0 0 300 {card_height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Most Used Languages">
+  <title>Most Used Languages</title>
+  <style>
+    .header {{
+      font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+      fill: #38bdf8;
+    }}
+    .lang-name {{
+      font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif;
+      fill: #a9fef7;
+    }}
+    .lang-pct {{
+      font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif;
+      fill: #858585;
+    }}
+  </style>
+
+  <rect x="0.5" y="0.5" rx="4.5" width="299" height="{card_height - 1}" fill="#141321" stroke="#e4e2e2" stroke-opacity="0.2"/>
+
+  <g transform="translate(25, 35)">
+    <text x="0" y="0" class="header">Most Used Languages</text>
+  </g>
+
+  <g transform="translate(0, 55)">
+    {items_svg}
+  </g>
+</svg>
+'''
+    return svg
+
 if __name__ == "__main__":
     stats = get_stats()
-    svg_content = generate_svg(stats)
     os.makedirs("profile", exist_ok=True)
+    
     with open("profile/stats.svg", "w", encoding="utf-8") as f:
-        f.write(svg_content)
-    print("Successfully generated profile/stats.svg")
+        f.write(generate_stats_svg(stats))
+        
+    with open("profile/languages.svg", "w", encoding="utf-8") as f:
+        f.write(generate_languages_svg(stats))
+        
+    print("Successfully generated profile/stats.svg and profile/languages.svg")
