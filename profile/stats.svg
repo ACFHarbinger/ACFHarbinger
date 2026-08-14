@@ -25,7 +25,7 @@
       stroke-width: 4;
       fill: none;
       stroke-dasharray: 251.2;
-      stroke-dashoffset: 142.0;
+      stroke-dashoffset: 141.7;
       stroke-linecap: round;
       transform: rotate(-90deg);
       transform-origin: center;
@@ -55,7 +55,7 @@
         <path d="M10.5 5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm.01 4.5A4.5 4.5 0 0115 14a.75.75 0 01-1.5 0 3 3 0 00-6 0 .75.75 0 01-1.5 0 4.5 4.5 0 014.51-4.5zM3.5 4a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
       </svg>
       <text x="25" y="12.5" class="stat bold">Total Commits:</text>
-      <text x="200" y="12.5" class="stat">5,657</text>
+      <text x="200" y="12.5" class="stat">5,838</text>
     </g>
     <g transform="translate(0, 50)">
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="#f8d000">
@@ -69,14 +69,14 @@
         <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z"/>
       </svg>
       <text x="25" y="12.5" class="stat bold">Total Issues:</text>
-      <text x="200" y="12.5" class="stat">739</text>
+      <text x="200" y="12.5" class="stat">802</text>
     </g>
     <g transform="translate(0, 100)">
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="#f8d000">
         <path d="M2 2.5A1.5 1.5 0 013.5 1h9A1.5 1.5 0 0114 2.5v11a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 13.5v-11z"/>
       </svg>
       <text x="25" y="12.5" class="stat bold">Contributed to:</text>
-      <text x="200" y="12.5" class="stat">41</text>
+      <text x="200" y="12.5" class="stat">43</text>
     </g>
   </g>
 
