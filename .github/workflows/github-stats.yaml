@@ -2,18 +2,23 @@ name: Update GitHub Metrics & Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"       # Runs daily at midnight UTC
-    - cron: "0 12 * * *"      # Runs daily at noon UTC
-  workflow_dispatch:          # Allows manual trigger anytime
+    - cron: "0 0 * * *"       # Daily at midnight UTC
+    - cron: "0 12 * * *"      # Daily at noon UTC
+  workflow_dispatch:
   push:
     branches:
       - main
     paths:
-      - 'src/**'
-      - 'templates/**'
-      - 'tests/**'
-      - 'generate_stats.py'
-      - '.github/workflows/github-stats.yaml'
+      - "src/**"
+      - "templates/**"
+      - "tests/**"
+      - "generate_stats.py"
+      - ".github/workflows/github-stats.yaml"
+      - "submodules/metrics/**"
+
+concurrency:
+  group: github-metrics
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -21,6 +26,8 @@ permissions:
 jobs:
   update-profile-telemetry:
     runs-on: ubuntu-latest
+    env:
+      METRICS_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout Repository with Submodules
         uses: actions/checkout@v4
@@ -31,47 +38,52 @@ jobs:
       - name: Set up Python 3.x
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Run Test Suite
-        run: |
-          python3 -m unittest discover -s tests
+        run: python3 -m unittest discover -s tests
 
       - name: Generate Custom Stats & Languages Cards
-        run: |
-          python3 generate_stats.py
+        run: python3 generate_stats.py
         env:
-          GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ env.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ env.METRICS_TOKEN }}
 
-      - name: Generate Lowlighter Metrics - Overview & Achievements
-        uses: lowlighter/metrics@latest
+      # Local submodule (ACFHarbinger/metrics). output_action=none keeps
+      # renders in /metrics_renders so a single commit can publish everything.
+      - name: Metrics — Overview, Achievements & Follow-up
+        uses: ./submodules/metrics
         continue-on-error: true
         with:
-          token: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          token: ${{ env.METRICS_TOKEN }}
           user: ACFHarbinger
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Lisbon
           config_theme: tokyonight
+          config_twemoji: yes
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_secrets: yes
           plugin_achievements_threshold: C
           plugin_lines: yes
           plugin_followup: yes
-          filename: profile/metrics.base.svg
+          retries: 3
+          retries_delay: 120
+          output_action: none
+          filename: metrics.base.svg
 
-      - name: Generate Lowlighter Metrics - Isometric Calendar & Habits
-        uses: lowlighter/metrics@latest
+      - name: Metrics — Isometric Calendar & Habits
+        uses: ./submodules/metrics
         continue-on-error: true
         with:
-          token: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          token: ${{ env.METRICS_TOKEN }}
           user: ACFHarbinger
           template: classic
           base: ""
           config_timezone: Europe/Lisbon
           config_theme: tokyonight
+          config_twemoji: yes
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
           plugin_habits: yes
@@ -79,7 +91,62 @@ jobs:
           plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_charts: yes
-          filename: profile/metrics.calendar.svg
+          retries: 3
+          retries_delay: 120
+          output_action: none
+          filename: metrics.calendar.svg
+
+      - name: Metrics — Languages
+        uses: ./submodules/metrics
+        continue-on-error: true
+        with:
+          token: ${{ env.METRICS_TOKEN }}
+          user: ACFHarbinger
+          template: classic
+          base: ""
+          config_timezone: Europe/Lisbon
+          config_theme: tokyonight
+          config_twemoji: yes
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, tex, dockerfile, makefile, cmake, shell
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+          retries: 3
+          retries_delay: 120
+          output_action: none
+          filename: metrics.languages.svg
+
+      - name: Metrics — Recent Activity
+        uses: ./submodules/metrics
+        continue-on-error: true
+        with:
+          token: ${{ env.METRICS_TOKEN }}
+          user: ACFHarbinger
+          template: classic
+          base: ""
+          config_timezone: Europe/Lisbon
+          config_theme: tokyonight
+          config_twemoji: yes
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: issue, pr, release, review, push, fork
+          retries: 3
+          retries_delay: 120
+          output_action: none
+          filename: metrics.activity.svg
+
+      - name: Collect Metrics Renders
+        if: always()
+        run: |
+          mkdir -p profile
+          if [ -d /metrics_renders ]; then
+            sudo cp -f /metrics_renders/*.svg profile/ || true
+            sudo chown -R "$(id -u)":"$(id -g)" profile
+          else
+            echo "No /metrics_renders directory present; skipping copy."
+          fi
+          ls -la profile || true
 
       - name: Generate Contribution Grid Snake Animation
         uses: Platane/snk@v3
@@ -91,9 +158,10 @@ jobs:
             profile/github-snake-dark.svg?palette=github-dark&color_snake=#38bdf8&color_dots=#141321,#1e293b,#0284c7,#38bdf8,#a9fef7
 
       - name: Commit and Push Updated Metrics
+        if: always()
         run: |
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/*.svg
           if git diff --staged --quiet; then
             echo "No telemetry changes detected to commit."

@@ -31,6 +31,13 @@ To generate the latest `profile/stats.svg` and `profile/languages.svg`:
 python3 generate_stats.py
 ```
 
+### Automated Metrics (GitHub Actions)
+The [metrics workflow](.github/workflows/github-stats.yaml) uses the **local** `submodules/metrics` action (not the remote `lowlighter/metrics` marketplace action).
+
+For richer GraphQL plugins (isocalendar, habits, languages, activity), add a classic Personal Access Token as a repository secret named `METRICS_TOKEN` (fallbacks: `PAT_TOKEN`, `GH_PAT`, then `GITHUB_TOKEN`). No scopes are required for public profile metrics; `read:user` / `repo` unlock private and in-depth data.
+
+Trigger a refresh from the Actions tab (`workflow_dispatch`) or wait for the `00:00` / `12:00` UTC schedules.
+
 ---
 
 ## 📋 Pull Request Process

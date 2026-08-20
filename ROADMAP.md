@@ -37,7 +37,7 @@ This roadmap outlines the research initiatives, engineering goals, game developm
 
 ### 3. 🌐 Web, Mobile & Developer Tooling
 
-- [x] **Automated Profile Telemetry**: Continuous dynamic generation of GitHub statistics, language analytics, and SVG telemetry badges.
+- [x] **Automated Profile Telemetry**: Continuous dynamic generation of GitHub statistics, language analytics, and SVG telemetry badges via `submodules/metrics`.
 - [ ] **Interactive Research Portfolio**: Upgrade GitHub Pages showcase with interactive visualization widgets for RL trajectories and OR algorithms.
 - [ ] **CLI Productivity Utilities**: Open-source lightweight CLI tools in Rust and Python for automated research workflow and metric logging.
 - [ ] **Cross-Platform Mobile Tools**: Build lightweight companion utilities using Kotlin / Android and modern cross-platform toolchains.

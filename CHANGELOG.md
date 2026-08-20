@@ -10,10 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Wired the local `submodules/metrics` GitHub Action into the daily telemetry workflow (overview, isometric calendar, languages, recent activity).
+- Rendered live metrics cards in the profile README (`profile/metrics.*.svg`), refreshed twice daily plus on manual dispatch.
+- Restyled social, stack, and project badges from the `submodules/markdown-badges` catalog.
 - Integrated `submodules/metrics` and `submodules/markdown-badges` submodules.
 - Automated GitHub Actions workflow for real-time telemetry, profile analytics, and SVG cards generation.
-- Modernized tech stack badges utilizing official high-contrast Shields and Simple Icons.
 - Community and repository governance standards: `LICENSE`, `CODE_OF_CONDUCT.md`, `ROADMAP.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `SECURITY.md`.
+
+### Changed
+- Metrics generation now uses `./submodules/metrics` instead of the remote `lowlighter/metrics@latest` action.
+- Workflow commits all generated SVGs in a single step (`output_action: none` + `/metrics_renders` collect).
+- Modernized tech stack badges utilizing official high-contrast Shields and Simple Icons.
 
 ---
 
