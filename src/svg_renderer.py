@@ -26,13 +26,11 @@ def render_stats_svg(stats: Dict[str, Any]) -> str:
     rank_level = stats.get('rank', 'B')
     percentile = stats.get('percentile', 50.0)
     
-    radius = 38
-    stroke_dasharray = 2 * math.pi * radius  # ~238.76
+    stroke_dasharray = 251.2  # 2 * pi * 40
     stroke_dashoffset = (percentile / 100.0) * stroke_dasharray
     
     name = stats.get('name', 'Afonso Cruz Fernandes')
     title = f"{name}'s GitHub Stats"
-    percentile_tag = f"TOP {percentile:.1f}%"
     
     mapping = {
         'title': title,
@@ -43,7 +41,6 @@ def render_stats_svg(stats: Dict[str, Any]) -> str:
         'issues': f"{stats.get('issues', 0):,}",
         'repos': f"{stats.get('repos', 0):,}",
         'rank_level': rank_level,
-        'percentile_tag': percentile_tag,
         'stroke_dasharray': f"{stroke_dasharray:.1f}",
         'stroke_dashoffset': f"{stroke_dashoffset:.1f}",
     }
@@ -51,7 +48,7 @@ def render_stats_svg(stats: Dict[str, Any]) -> str:
     return Template(template_content).safe_substitute(mapping)
 
 def render_languages_svg(stats: Dict[str, Any]) -> str:
-    """Renders Most Used Languages SVG card (2-column layout) using templates/languages_card.svg."""
+    """Renders Most Used Languages SVG card using templates/languages_card.svg."""
     card_template_path = TEMPLATES_DIR / "languages_card.svg"
     item_template_path = TEMPLATES_DIR / "language_item.svg"
     
@@ -59,23 +56,19 @@ def render_languages_svg(stats: Dict[str, Any]) -> str:
     item_template = item_template_path.read_text(encoding="utf-8")
     
     styles = load_styles()
-    langs = stats.get('langs', [])[:8]  # Top 8 languages in 2 columns
+    langs = stats.get('langs', [])
+    
+    card_height = 80 + len(langs) * 40
+    card_height_inner = card_height - 1
     
     rendered_items = []
     for idx, lang in enumerate(langs):
-        if idx < 4:
-            x_pos = 25
-            y_pos = idx * 32
-        else:
-            x_pos = 265
-            y_pos = (idx - 4) * 32
-            
+        y_pos = idx * 40
         pct = lang['pct']
-        pct_str = f"{pct:.1f}%" if pct < 10 else f"{pct:.1f}%"
-        bar_width = max(4, int((pct / 100.0) * 195))
+        pct_str = f"{pct:.2f}%"
+        bar_width = max(2, int((pct / 100.0) * 205))
         
         item_mapping = {
-            'x_pos': str(x_pos),
             'y_pos': str(y_pos),
             'name': lang['name'],
             'color': lang['color'],
@@ -87,6 +80,8 @@ def render_languages_svg(stats: Dict[str, Any]) -> str:
     language_items_str = "\n".join(rendered_items)
     
     card_mapping = {
+        'card_height': str(card_height),
+        'card_height_inner': str(card_height_inner),
         'styles': styles,
         'language_items': language_items_str
     }

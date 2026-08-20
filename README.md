@@ -193,9 +193,9 @@
 ### 📊 Live GitHub Analytics & Telemetry
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/stats.svg" alt="GitHub Overall Stats" />
-  &nbsp;
-  <img src="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/languages.svg" alt="Most Used Languages" />
+  <img src="./profile/stats.svg" alt="GitHub Overall Stats" />
+  <br/><br/>
+  <img src="./profile/languages.svg" alt="Most Used Languages" />
 
   <br/><br/>
 
@@ -208,9 +208,9 @@
 
   <!-- Contribution Snake Grid (Auto-updated via workflow) -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/github-snake.svg">
-    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/github-snake-dark.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./profile/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./profile/github-snake.svg">
+    <img alt="GitHub Contribution Snake Animation" src="./profile/github-snake-dark.svg" width="100%" />
   </picture>
 </div>
 
