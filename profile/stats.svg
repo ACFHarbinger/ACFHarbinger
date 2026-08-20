@@ -8,7 +8,7 @@
     <linearGradient id="cardBorderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
       <stop offset="50%" stop-color="#2a283e" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.35" />
     </linearGradient>
     <style>
 /* SVG Telemetry Theme - Tokyo Night & Cyber Neon */
@@ -29,13 +29,25 @@
   }
 }
 
+@keyframes pulseGlow {
+  0% {
+    filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.7));
+  }
+  100% {
+    filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.3));
+  }
+}
+
 .card-bg {
   fill: #141321;
   stroke: #2a283e;
   stroke-width: 1.5;
-  rx: 8;
-  ry: 8;
-  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.45));
+  rx: 10;
+  ry: 10;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
 }
 
 .header {
@@ -56,9 +68,23 @@
 }
 
 .rank-text {
-  font: 800 26px 'Segoe UI', Ubuntu, -apple-system, BlinkMacSystemFont, Roboto, Sans-Serif;
+  font: 800 28px 'Segoe UI', Ubuntu, -apple-system, BlinkMacSystemFont, Roboto, Sans-Serif;
   fill: #38bdf8;
-  text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+}
+
+.rank-pill {
+  font: 700 10px 'Segoe UI', Ubuntu, -apple-system, BlinkMacSystemFont, Roboto, Sans-Serif;
+  fill: #a9fef7;
+  letter-spacing: 0.3px;
+}
+
+.rank-pill-bg {
+  fill: rgba(56, 189, 248, 0.12);
+  stroke: rgba(56, 189, 248, 0.3);
+  stroke-width: 1;
+  rx: 4;
+  ry: 4;
 }
 
 .rank-circle-bg {
@@ -74,6 +100,7 @@
   stroke-linecap: round;
   transform: rotate(-90deg);
   transform-origin: center;
+  animation: pulseGlow 4s infinite ease-in-out;
   transition: stroke-dashoffset 0.8s ease-in-out;
 }
 
@@ -107,7 +134,7 @@
   </defs>
 
   <!-- Background Card -->
-  <rect x="1" y="1" width="493" height="193" rx="8" class="card-bg" stroke="url(#cardBorderGradient)"/>
+  <rect x="1" y="1" width="493" height="193" rx="10" class="card-bg" stroke="url(#cardBorderGradient)"/>
 
   <!-- Card Header -->
   <g transform="translate(25, 35)">
@@ -162,10 +189,14 @@
     </g>
   </g>
 
-  <!-- Circular Rank Display -->
-  <g transform="translate(400, 110)">
-    <circle cx="0" cy="0" r="40" class="rank-circle-bg"/>
-    <circle cx="0" cy="0" r="40" class="rank-circle" stroke-dasharray="251.3" stroke-dashoffset="139.7"/>
+  <!-- Circular Rank Display & Percentile Pill -->
+  <g transform="translate(405, 100)">
+    <circle cx="0" cy="0" r="38" class="rank-circle-bg"/>
+    <circle cx="0" cy="0" r="38" class="rank-circle" stroke-dasharray="238.8" stroke-dashoffset="132.7"/>
     <text x="0" y="9" text-anchor="middle" class="rank-text">B</text>
+    <g transform="translate(-36, 48)">
+      <rect width="72" height="18" class="rank-pill-bg"/>
+      <text x="36" y="12.5" text-anchor="middle" class="rank-pill">TOP 55.6%</text>
+    </g>
   </g>
 </svg>

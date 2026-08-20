@@ -18,11 +18,12 @@
 
   <br/><br/>
 
-  <!-- Repository Quick Nav -->
+  <!-- Repository Quick Nav & Telemetry Badges -->
   <a href="./ROADMAP.md"><img src="https://img.shields.io/badge/Roadmap-Strategic%20Goals-7928CA?style=flat-square&logo=target" alt="Roadmap" /></a>
   <a href="./CHANGELOG.md"><img src="https://img.shields.io/badge/Changelog-Keep%20A%20Changelog-0070F3?style=flat-square&logo=git" alt="Changelog" /></a>
   <a href="./CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contributing-Guidelines-2ea44f?style=flat-square&logo=github" alt="Contributing" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" /></a>
+  <a href="https://komarev.com/ghpvc/?username=ACFHarbinger&label=Profile%20Views&color=38bdf8&style=flat-square"><img src="https://komarev.com/ghpvc/?username=ACFHarbinger&label=Profile%20Views&color=38bdf8&style=flat-square" alt="Profile Views" /></a>
 </div>
 
 <br/>
@@ -38,7 +39,7 @@
 #### 🎯 What Drives Me
 - 🔭 **Research**: Deep Reinforcement Learning (RL) & Operations Research (OR) aimed at solving complex NP-hard Combinatorial Optimization problems (TSP, VRP, Scheduling).
 - 🧠 **Methodologies**: Hybrid algorithms uniting Graph Neural Networks (GNNs) with classical heuristics & metaheuristics.
-- 🌱 **Continuous Learning**: Advanced 2D pixel art pipelines, procedural level generation, and systems programming in Rust.
+- 🌱 **Learning**: Art & Animation for Game Development, plus Mobile & Web Application Engineering.
 - ⚡ **Fun Fact**: Hydra stem cells grant them perpetual regenerative capabilities, making them biologically immortal!
 
 </td>
@@ -46,8 +47,8 @@
 
 #### 🤝 Collaboration & Inquiries
 - 👯 **Open to Collaborate**: Research initiatives on combinatorial solvers, scientific RL baselines, and indie game systems.
-- 🤔 **Looking for Input**: Visual art styling, pixel art animations, and game audio design.
-- 💬 **Ask Me About**: Reinforcement Learning, Operations Research, Graph Theory, Algorithm Optimization, and Game Architecture.
+- 🤔 **Looking for Help**: Art, Animation, and Visual Design.
+- 💬 **Ask Me About**: Computer Science & Engineering, Mathematics, Artificial Intelligence, and Operations Research.
 - 📬 **Reach Out**: Drop an email or message anytime via [LinkedIn](https://linkedin.com/in/afonso-cruz-fernandes-31a38612a) or [X](https://twitter.com/PeacekeeperBH).
 
 </td>
@@ -71,28 +72,27 @@
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
   <img src="https://img.shields.io/badge/LaTeX-47A141?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" />
-  <br/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
 </p>
 
-#### 🧠 Machine Learning, Optimization & Data Science
+#### 🧠 Machine Learning, Optimization & Scientific Computing
 <p align="center">
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
   <img src="https://img.shields.io/badge/PyTorch_Geometric-3C2179?style=for-the-badge&logo=pyg&logoColor=white" alt="PyTorch Geometric" />
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/SciPy-0C55A5?style=for-the-badge&logo=scipy&logoColor=white" alt="SciPy" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
   <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
 </p>
 
-#### 🎮 Game Development & Creative Tools
+#### 🎮 Game Development, 2D Art & Animation
 <p align="center">
   <img src="https://img.shields.io/badge/Godot_Engine-478CBF?style=for-the-badge&logo=godotengine&logoColor=white" alt="Godot Engine" />
   <img src="https://img.shields.io/badge/GDScript-74267B?style=for-the-badge&logo=godotengine&logoColor=white" alt="GDScript" />
@@ -102,6 +102,17 @@
   <img src="https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white" alt="Blender" />
 </p>
 
+#### 🌐 Web Engineering & Databases
+<p align="center">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+  <img src="https://img.shields.io/badge/Redis-DD0031?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
+</p>
+
 #### ⚙️ Developer Tools, Systems & DevOps
 <p align="center">
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
@@ -109,9 +120,9 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white" alt="Neovim" />
   <img src="https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake" />
   <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" alt="iOS" />
 </p>
 
 </div>
@@ -167,6 +178,18 @@
 
 ---
 
+### 🏆 GitHub Trophies
+
+<div align="center">
+  <a href="https://github.com/ACFHarbinger">
+    <img src="https://github-profile-trophy.vercel.app/?username=ACFHarbinger&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4&margin-h=4&column=7" alt="GitHub Trophies" />
+  </a>
+</div>
+
+<br/>
+
+---
+
 ### 📊 Live GitHub Analytics & Telemetry
 
 <div align="center">
@@ -185,6 +208,13 @@
 
   <a href="https://github.com/ACFHarbinger">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=ACFHarbinger&theme=tokyonight&hide_border=false" alt="GitHub Streak Stats" />
+  </a>
+
+  <br/><br/>
+
+  <!-- Contribution Activity Graph -->
+  <a href="https://github.com/ACFHarbinger">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=ACFHarbinger&theme=tokyo-night&hide_border=false&area=true" width="100%" alt="Contribution Activity Graph" />
   </a>
 
   <br/><br/>

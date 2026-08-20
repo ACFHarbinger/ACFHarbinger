@@ -8,7 +8,7 @@
     <linearGradient id="cardBorderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
       <stop offset="50%" stop-color="#2a283e" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.35" />
     </linearGradient>
     <style>
 ${styles}
@@ -16,7 +16,7 @@ ${styles}
   </defs>
 
   <!-- Background Card -->
-  <rect x="1" y="1" width="493" height="193" rx="8" class="card-bg" stroke="url(#cardBorderGradient)"/>
+  <rect x="1" y="1" width="493" height="193" rx="10" class="card-bg" stroke="url(#cardBorderGradient)"/>
 
   <!-- Card Header -->
   <g transform="translate(25, 35)">
@@ -71,10 +71,14 @@ ${styles}
     </g>
   </g>
 
-  <!-- Circular Rank Display -->
-  <g transform="translate(400, 110)">
-    <circle cx="0" cy="0" r="40" class="rank-circle-bg"/>
-    <circle cx="0" cy="0" r="40" class="rank-circle" stroke-dasharray="${stroke_dasharray}" stroke-dashoffset="${stroke_dashoffset}"/>
+  <!-- Circular Rank Display & Percentile Pill -->
+  <g transform="translate(405, 100)">
+    <circle cx="0" cy="0" r="38" class="rank-circle-bg"/>
+    <circle cx="0" cy="0" r="38" class="rank-circle" stroke-dasharray="${stroke_dasharray}" stroke-dashoffset="${stroke_dashoffset}"/>
     <text x="0" y="9" text-anchor="middle" class="rank-text">${rank_level}</text>
+    <g transform="translate(-36, 48)">
+      <rect width="72" height="18" class="rank-pill-bg"/>
+      <text x="36" y="12.5" text-anchor="middle" class="rank-pill">${percentile_tag}</text>
+    </g>
   </g>
 </svg>

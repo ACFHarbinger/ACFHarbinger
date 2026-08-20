@@ -26,12 +26,13 @@ def render_stats_svg(stats: Dict[str, Any]) -> str:
     rank_level = stats.get('rank', 'B')
     percentile = stats.get('percentile', 50.0)
     
-    radius = 40
-    stroke_dasharray = 2 * math.pi * radius  # ~251.327
+    radius = 38
+    stroke_dasharray = 2 * math.pi * radius  # ~238.76
     stroke_dashoffset = (percentile / 100.0) * stroke_dasharray
     
     name = stats.get('name', 'Afonso Cruz Fernandes')
     title = f"{name}'s GitHub Stats"
+    percentile_tag = f"TOP {percentile:.1f}%"
     
     mapping = {
         'title': title,
@@ -42,6 +43,7 @@ def render_stats_svg(stats: Dict[str, Any]) -> str:
         'issues': f"{stats.get('issues', 0):,}",
         'repos': f"{stats.get('repos', 0):,}",
         'rank_level': rank_level,
+        'percentile_tag': percentile_tag,
         'stroke_dasharray': f"{stroke_dasharray:.1f}",
         'stroke_dashoffset': f"{stroke_dashoffset:.1f}",
     }
