@@ -1,0 +1,9 @@
+    <g transform="translate(0, ${y_pos})">
+      <circle cx="15" cy="11" r="4" fill="${color}" />
+      <text x="26" y="15" class="lang-name">${name}</text>
+      <text x="275" y="15" text-anchor="end" class="lang-pct">${pct_str}</text>
+      <svg width="250" x="25" y="22">
+        <rect width="250" height="7" class="progress-track"/>
+        <rect width="${bar_width}" height="7" fill="${color}" class="progress-bar"/>
+      </svg>
+    </g>
