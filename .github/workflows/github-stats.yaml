@@ -9,6 +9,9 @@ on:
     branches:
       - main
     paths:
+      - 'src/**'
+      - 'templates/**'
+      - 'tests/**'
       - 'generate_stats.py'
       - '.github/workflows/github-stats.yaml'
 
@@ -29,6 +32,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+
+      - name: Run Test Suite
+        run: |
+          python3 -m unittest discover -s tests
 
       - name: Generate Custom Stats & Languages Cards
         run: |
