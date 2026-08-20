@@ -9,7 +9,7 @@
 
   <br/><br/>
 
-  <!-- Social Badges (Powered by markdown-badges) -->
+  <!-- Social & Academic Badges (Powered by markdown-badges) -->
   <a href="mailto:afonso.fernandes100@gmail.com"><img src="https://img.shields.io/badge/Email-afonso.fernandes100%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://linkedin.com/in/afonso-cruz-fernandes-31a38612a"><img src="https://img.shields.io/badge/LinkedIn-Afonso%20Fernandes-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://twitter.com/PeacekeeperBH"><img src="https://img.shields.io/badge/X-@PeacekeeperBH-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
@@ -18,7 +18,7 @@
 
   <br/><br/>
 
-  <!-- Quick Repository Nav -->
+  <!-- Repository Quick Nav -->
   <a href="./ROADMAP.md"><img src="https://img.shields.io/badge/Roadmap-Strategic%20Goals-7928CA?style=flat-square&logo=target" alt="Roadmap" /></a>
   <a href="./CHANGELOG.md"><img src="https://img.shields.io/badge/Changelog-Keep%20A%20Changelog-0070F3?style=flat-square&logo=git" alt="Changelog" /></a>
   <a href="./CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contributing-Guidelines-2ea44f?style=flat-square&logo=github" alt="Contributing" /></a>
@@ -117,6 +117,53 @@
 
 ---
 
+### 🚀 Featured Research & Projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>📦 <a href="https://github.com/ACFHarbinger/WSmartPlus-Route">WSmartPlus-Route</a></h4>
+      <p>Machine Learning models and Operations Research solvers for Combinatorial Optimization problems, focusing on vehicle route planning for smart logistics and waste collection.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/OR--Tools-4285F4?style=flat-square&logo=google&logoColor=white" alt="OR-Tools" />
+        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🤖 <a href="https://github.com/ACFHarbinger/nglab">nglab</a></h4>
+      <p><i>Nothing Gambles Like A Bot (NGLAB)</i> — A Multimodal Deep Reinforcement Learning bot designed to assist in complex sequential decision-making and market modeling.</p>
+      <p>
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+        <img src="https://img.shields.io/badge/Deep_RL-38bdf8?style=flat-square&logo=openai&logoColor=white" alt="Deep RL" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>👥 <a href="https://github.com/ACFHarbinger/Coding-Assistants">Coding-Assistants</a></h4>
+      <p>An orchestration environment built in Rust where multiple LLM agents collaborate, discuss, and implement solutions across a given target codebase.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+        <img src="https://img.shields.io/badge/LLM_Agents-00A67E?style=flat-square&logo=openai&logoColor=white" alt="LLM Agents" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🎨 <a href="https://github.com/ACFHarbinger/Cel-Shaded-Generator">Cel-Shaded-Generator</a></h4>
+      <p>Semi-autonomous cel-shaded visual generator leveraging Machine Learning and numerical optimization to assist human digital art development.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" />
+        <img src="https://img.shields.io/badge/Optimization-FFA500?style=flat-square" alt="Optimization" />
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
 ### 📊 Live GitHub Analytics & Telemetry
 
 <div align="center">
@@ -136,6 +183,15 @@
   <a href="https://github.com/ACFHarbinger">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=ACFHarbinger&theme=tokyonight&hide_border=false" alt="GitHub Streak Stats" />
   </a>
+
+  <br/><br/>
+
+  <!-- Contribution Snake Grid (Auto-updated via workflow) -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./profile/github-snake.svg">
+    <img alt="GitHub Contribution Snake Animation" src="./profile/github-snake-dark.svg" width="100%" />
+  </picture>
 </div>
 
 <br/>
