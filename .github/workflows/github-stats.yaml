@@ -1,44 +1,89 @@
-name: Update GitHub Stats
+name: Update GitHub Metrics & Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 0 * * *"       # Runs daily at midnight UTC
+    - cron: "0 12 * * *"      # Runs daily at noon UTC
+  workflow_dispatch:          # Allows manual trigger anytime
+  push:
+    branches:
+      - main
+    paths:
+      - 'generate_stats.py'
+      - '.github/workflows/github-stats.yaml'
 
 permissions:
-  contents: write  # This allows the GITHUB_TOKEN to push changes
+  contents: write
 
 jobs:
-  publish:
+  update-profile-telemetry:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository with Submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
 
-      - name: Set up Python
+      - name: Set up Python 3.x
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Generate Stats Card
+      - name: Generate Custom Stats & Languages Cards
         run: |
           python3 generate_stats.py
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
-      - name: Generate Language Card
-        uses: readme-tools/github-readme-stats-action@v1
+      - name: Generate Metrics Overview & Achievements
+        uses: lowlighter/metrics@latest
+        continue-on-error: true
         with:
-          card: top-langs
-          options: "username=ACFHarbinger&theme=tokyonight&langs_count=15"
-          path: profile/languages.svg
           token: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          user: ACFHarbinger
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Europe/Lisbon
+          config_theme: tokyonight
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_secrets: yes
+          plugin_achievements_threshold: C
+          plugin_lines: yes
+          plugin_followup: yes
+          filename: profile/metrics.base.svg
 
-      - name: Commit and Push
+      - name: Generate Isometric Calendar & Coding Habits
+        uses: lowlighter/metrics@latest
+        continue-on-error: true
+        with:
+          token: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          user: ACFHarbinger
+          template: classic
+          base: ""
+          config_timezone: Europe/Lisbon
+          config_theme: tokyonight
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          filename: profile/metrics.calendar.svg
+
+      - name: Commit and Push Updated Metrics
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add profile/*.svg
-          git commit -m "Update GitHub statistics" || exit 0
-          git push
+          if git diff --staged --quiet; then
+            echo "No telemetry changes detected to commit."
+          else
+            git commit -m "chore(telemetry): auto-update GitHub metrics and analytics"
+            git push
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
