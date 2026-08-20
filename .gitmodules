@@ -1,0 +1,6 @@
+[submodule "submodules/markdown-badges"]
+	path = submodules/markdown-badges
+	url = https://github.com/ACFHarbinger/markdown-badges.git
+[submodule "submodules/metrics"]
+	path = submodules/metrics
+	url = https://github.com/ACFHarbinger/metrics.git
