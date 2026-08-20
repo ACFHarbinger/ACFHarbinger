@@ -51,7 +51,7 @@ def render_stats_svg(stats: Dict[str, Any]) -> str:
     return Template(template_content).safe_substitute(mapping)
 
 def render_languages_svg(stats: Dict[str, Any]) -> str:
-    """Renders Most Used Languages SVG card using templates/languages_card.svg and templates/language_item.svg."""
+    """Renders Most Used Languages SVG card (2-column layout) using templates/languages_card.svg."""
     card_template_path = TEMPLATES_DIR / "languages_card.svg"
     item_template_path = TEMPLATES_DIR / "language_item.svg"
     
@@ -59,19 +59,23 @@ def render_languages_svg(stats: Dict[str, Any]) -> str:
     item_template = item_template_path.read_text(encoding="utf-8")
     
     styles = load_styles()
-    langs = stats.get('langs', [])
-    
-    card_height = 80 + len(langs) * 40
-    card_height_inner = card_height - 2
+    langs = stats.get('langs', [])[:8]  # Top 8 languages in 2 columns
     
     rendered_items = []
     for idx, lang in enumerate(langs):
-        y_pos = idx * 40
+        if idx < 4:
+            x_pos = 25
+            y_pos = idx * 32
+        else:
+            x_pos = 265
+            y_pos = (idx - 4) * 32
+            
         pct = lang['pct']
-        pct_str = f"{pct:.2f}%"
-        bar_width = max(3, int((pct / 100.0) * 250))
+        pct_str = f"{pct:.1f}%" if pct < 10 else f"{pct:.1f}%"
+        bar_width = max(4, int((pct / 100.0) * 195))
         
         item_mapping = {
+            'x_pos': str(x_pos),
             'y_pos': str(y_pos),
             'name': lang['name'],
             'color': lang['color'],
@@ -83,8 +87,6 @@ def render_languages_svg(stats: Dict[str, Any]) -> str:
     language_items_str = "\n".join(rendered_items)
     
     card_mapping = {
-        'card_height': str(card_height),
-        'card_height_inner': str(card_height_inner),
         'styles': styles,
         'language_items': language_items_str
     }

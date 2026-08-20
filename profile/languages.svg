@@ -1,10 +1,10 @@
-<svg width="300" height="560" viewBox="0 0 300 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Most Used Languages">
+<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Most Used Languages">
   <title>Most Used Languages</title>
   <defs>
-    <linearGradient id="cardBorderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="langCardBorderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
       <stop offset="50%" stop-color="#2a283e" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.35" />
     </linearGradient>
     <style>
 /* SVG Telemetry Theme - Tokyo Night & Cyber Neon */
@@ -130,132 +130,92 @@
   </defs>
 
   <!-- Background Card -->
-  <rect x="1" y="1" width="298" height="558" rx="8" class="card-bg" stroke="url(#cardBorderGradient)"/>
+  <rect x="1" y="1" width="493" height="193" rx="10" class="card-bg" stroke="url(#langCardBorderGradient)"/>
 
   <!-- Card Header -->
   <g transform="translate(25, 35)">
     <text x="0" y="0" class="header">Most Used Languages</text>
   </g>
 
-  <!-- Languages List -->
-  <g transform="translate(0, 55)">
-    <g transform="translate(0, 0)">
-      <circle cx="15" cy="11" r="4" fill="#3572A5" />
-      <text x="26" y="15" class="lang-name">Python</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">37.74%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="94" height="7" fill="#3572A5" class="progress-bar"/>
+  <!-- Languages 2-Column Grid -->
+  <g transform="translate(0, 50)">
+    <g transform="translate(25, 0)">
+      <circle cx="6" cy="10" r="4" fill="#3572A5" />
+      <text x="16" y="14" class="lang-name">Python</text>
+      <text x="200" y="14" text-anchor="end" class="lang-pct">37.7%</text>
+      <svg width="195" x="5" y="20">
+        <rect width="195" height="6" class="progress-track"/>
+        <rect width="73" height="6" fill="#3572A5" class="progress-bar"/>
       </svg>
     </g>
 
-    <g transform="translate(0, 40)">
-      <circle cx="15" cy="11" r="4" fill="#f34b7d" />
-      <text x="26" y="15" class="lang-name">C++</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">32.25%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="80" height="7" fill="#f34b7d" class="progress-bar"/>
+    <g transform="translate(25, 32)">
+      <circle cx="6" cy="10" r="4" fill="#f34b7d" />
+      <text x="16" y="14" class="lang-name">C++</text>
+      <text x="200" y="14" text-anchor="end" class="lang-pct">32.3%</text>
+      <svg width="195" x="5" y="20">
+        <rect width="195" height="6" class="progress-track"/>
+        <rect width="62" height="6" fill="#f34b7d" class="progress-bar"/>
       </svg>
     </g>
 
-    <g transform="translate(0, 80)">
-      <circle cx="15" cy="11" r="4" fill="#3178c6" />
-      <text x="26" y="15" class="lang-name">TypeScript</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">17.69%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="44" height="7" fill="#3178c6" class="progress-bar"/>
+    <g transform="translate(25, 64)">
+      <circle cx="6" cy="10" r="4" fill="#3178c6" />
+      <text x="16" y="14" class="lang-name">TypeScript</text>
+      <text x="200" y="14" text-anchor="end" class="lang-pct">17.7%</text>
+      <svg width="195" x="5" y="20">
+        <rect width="195" height="6" class="progress-track"/>
+        <rect width="34" height="6" fill="#3178c6" class="progress-bar"/>
       </svg>
     </g>
 
-    <g transform="translate(0, 120)">
-      <circle cx="15" cy="11" r="4" fill="#DA5B0B" />
-      <text x="26" y="15" class="lang-name">Jupyter Notebook</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">2.25%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="5" height="7" fill="#DA5B0B" class="progress-bar"/>
+    <g transform="translate(25, 96)">
+      <circle cx="6" cy="10" r="4" fill="#DA5B0B" />
+      <text x="16" y="14" class="lang-name">Jupyter Notebook</text>
+      <text x="200" y="14" text-anchor="end" class="lang-pct">2.3%</text>
+      <svg width="195" x="5" y="20">
+        <rect width="195" height="6" class="progress-track"/>
+        <rect width="4" height="6" fill="#DA5B0B" class="progress-bar"/>
       </svg>
     </g>
 
-    <g transform="translate(0, 160)">
-      <circle cx="15" cy="11" r="4" fill="#dea584" />
-      <text x="26" y="15" class="lang-name">Rust</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">1.78%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="4" height="7" fill="#dea584" class="progress-bar"/>
+    <g transform="translate(265, 0)">
+      <circle cx="6" cy="10" r="4" fill="#dea584" />
+      <text x="16" y="14" class="lang-name">Rust</text>
+      <text x="200" y="14" text-anchor="end" class="lang-pct">1.8%</text>
+      <svg width="195" x="5" y="20">
+        <rect width="195" height="6" class="progress-track"/>
+        <rect width="4" height="6" fill="#dea584" class="progress-bar"/>
       </svg>
     </g>
 
-    <g transform="translate(0, 200)">
-      <circle cx="15" cy="11" r="4" fill="#e34c26" />
-      <text x="26" y="15" class="lang-name">HTML</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">1.14%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="3" height="7" fill="#e34c26" class="progress-bar"/>
+    <g transform="translate(265, 32)">
+      <circle cx="6" cy="10" r="4" fill="#e34c26" />
+      <text x="16" y="14" class="lang-name">HTML</text>
+      <text x="200" y="14" text-anchor="end" class="lang-pct">1.1%</text>
+      <svg width="195" x="5" y="20">
+        <rect width="195" height="6" class="progress-track"/>
+        <rect width="4" height="6" fill="#e34c26" class="progress-bar"/>
       </svg>
     </g>
 
-    <g transform="translate(0, 240)">
-      <circle cx="15" cy="11" r="4" fill="#555555" />
-      <text x="26" y="15" class="lang-name">C</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">1.12%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="3" height="7" fill="#555555" class="progress-bar"/>
+    <g transform="translate(265, 64)">
+      <circle cx="6" cy="10" r="4" fill="#555555" />
+      <text x="16" y="14" class="lang-name">C</text>
+      <text x="200" y="14" text-anchor="end" class="lang-pct">1.1%</text>
+      <svg width="195" x="5" y="20">
+        <rect width="195" height="6" class="progress-track"/>
+        <rect width="4" height="6" fill="#555555" class="progress-bar"/>
       </svg>
     </g>
 
-    <g transform="translate(0, 280)">
-      <circle cx="15" cy="11" r="4" fill="#f1e05a" />
-      <text x="26" y="15" class="lang-name">JavaScript</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">1.12%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="3" height="7" fill="#f1e05a" class="progress-bar"/>
-      </svg>
-    </g>
-
-    <g transform="translate(0, 320)">
-      <circle cx="15" cy="11" r="4" fill="#DA3434" />
-      <text x="26" y="15" class="lang-name">CMake</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">0.75%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="3" height="7" fill="#DA3434" class="progress-bar"/>
-      </svg>
-    </g>
-
-    <g transform="translate(0, 360)">
-      <circle cx="15" cy="11" r="4" fill="#2f4aab" />
-      <text x="26" y="15" class="lang-name">KiCad Layout</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">0.57%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="3" height="7" fill="#2f4aab" class="progress-bar"/>
-      </svg>
-    </g>
-
-    <g transform="translate(0, 400)">
-      <circle cx="15" cy="11" r="4" fill="#b07219" />
-      <text x="26" y="15" class="lang-name">Java</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">0.54%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="3" height="7" fill="#b07219" class="progress-bar"/>
-      </svg>
-    </g>
-
-    <g transform="translate(0, 440)">
-      <circle cx="15" cy="11" r="4" fill="#663399" />
-      <text x="26" y="15" class="lang-name">CSS</text>
-      <text x="275" y="15" text-anchor="end" class="lang-pct">0.51%</text>
-      <svg width="250" x="25" y="22">
-        <rect width="250" height="7" class="progress-track"/>
-        <rect width="3" height="7" fill="#663399" class="progress-bar"/>
+    <g transform="translate(265, 96)">
+      <circle cx="6" cy="10" r="4" fill="#f1e05a" />
+      <text x="16" y="14" class="lang-name">JavaScript</text>
+      <text x="200" y="14" text-anchor="end" class="lang-pct">1.1%</text>
+      <svg width="195" x="5" y="20">
+        <rect width="195" height="6" class="progress-track"/>
+        <rect width="4" height="6" fill="#f1e05a" class="progress-bar"/>
       </svg>
     </g>
 
