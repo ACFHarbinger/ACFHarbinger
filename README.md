@@ -198,19 +198,15 @@ Cards in this section are generated twice daily by [`.github/workflows/github-st
   <tr>
     <td width="50%" valign="top" align="center">
       <img src="./profile/metrics.base.svg" width="100%" alt="GitHub Metrics Overview" />
+      <br/>
+      <img src="./profile/metrics.languages.svg" width="100%" alt="Languages activity" />
+      <br/>
+      <img src="./profile/metrics.activity.svg" width="100%" alt="Recent activity" />
     </td>
     <td width="50%" valign="top" align="center">
       <img src="./profile/stats.svg" width="100%" alt="GitHub Overall Stats" />
       <br/>
       <img src="./profile/languages.svg" width="100%" alt="Most Used Languages" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top" align="center">
-      <img src="./profile/metrics.languages.svg" width="100%" alt="Languages activity" />
-    </td>
-    <td width="50%" valign="top" align="center">
-      <img src="./profile/metrics.activity.svg" width="100%" alt="Recent activity" />
     </td>
   </tr>
 </table>
