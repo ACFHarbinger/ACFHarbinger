@@ -37,7 +37,7 @@ jobs:
           GH_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
-      - name: Generate Metrics Overview & Achievements
+      - name: Generate Lowlighter Metrics - Overview & Achievements
         uses: lowlighter/metrics@latest
         continue-on-error: true
         with:
@@ -55,7 +55,7 @@ jobs:
           plugin_followup: yes
           filename: profile/metrics.base.svg
 
-      - name: Generate Isometric Calendar & Coding Habits
+      - name: Generate Lowlighter Metrics - Isometric Calendar & Habits
         uses: lowlighter/metrics@latest
         continue-on-error: true
         with:
@@ -73,6 +73,15 @@ jobs:
           plugin_habits_facts: yes
           plugin_habits_charts: yes
           filename: profile/metrics.calendar.svg
+
+      - name: Generate Contribution Grid Snake Animation
+        uses: Platane/snk@v3
+        continue-on-error: true
+        with:
+          github_user_name: ACFHarbinger
+          outputs: |
+            profile/github-snake.svg
+            profile/github-snake-dark.svg?palette=github-dark&color_snake=#38bdf8&color_dots=#141321,#1e293b,#0284c7,#38bdf8,#a9fef7
 
       - name: Commit and Push Updated Metrics
         run: |
