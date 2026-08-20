@@ -178,16 +178,26 @@
 
 ---
 
+### 🏆 GitHub Achievements & Trophies
+
+<div align="center">
+  <a href="https://github.com/ACFHarbinger">
+    <img src="https://github-trophies.devomb.com/?username=ACFHarbinger&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4&margin-h=4&column=7" alt="GitHub Trophies" />
+  </a>
+</div>
+
+<br/>
+
+---
+
 ### 📊 Live GitHub Analytics & Telemetry
 
 <div align="center">
-  <p align="center">
-    <img src="profile/stats.svg" alt="GitHub Overall Stats" />
-    &nbsp;
-    <img src="profile/languages.svg" alt="Most Used Languages" />
-  </p>
+  <img src="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/stats.svg" alt="GitHub Overall Stats" />
+  &nbsp;
+  <img src="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/languages.svg" alt="Most Used Languages" />
 
-  <br/>
+  <br/><br/>
 
   <!-- Contribution Activity Graph -->
   <a href="https://github.com/ACFHarbinger">
@@ -198,9 +208,9 @@
 
   <!-- Contribution Snake Grid (Auto-updated via workflow) -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="profile/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="profile/github-snake.svg">
-    <img alt="GitHub Contribution Snake Animation" src="profile/github-snake-dark.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/github-snake.svg">
+    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/ACFHarbinger/ACFHarbinger/main/profile/github-snake-dark.svg" width="100%" />
   </picture>
 </div>
 
