@@ -51,53 +51,53 @@
 
   <g transform="translate(0, 55)">
     <g transform="translate(0, 0)">
-      <text x="25" y="15" class="lang-name">Python</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">37.74%</text>
+      <text x="25" y="15" class="lang-name">C++</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">36.42%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
-        <rect rx="4" ry="4" x="0" y="0" width="77" height="8" fill="#3572A5"/>
+        <rect rx="4" ry="4" x="0" y="0" width="74" height="8" fill="#f34b7d"/>
       </svg>
     </g>
 
     <g transform="translate(0, 40)">
-      <text x="25" y="15" class="lang-name">C++</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">32.25%</text>
+      <text x="25" y="15" class="lang-name">Python</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">32.73%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
-        <rect rx="4" ry="4" x="0" y="0" width="66" height="8" fill="#f34b7d"/>
+        <rect rx="4" ry="4" x="0" y="0" width="67" height="8" fill="#3572A5"/>
       </svg>
     </g>
 
     <g transform="translate(0, 80)">
       <text x="25" y="15" class="lang-name">TypeScript</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">17.69%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">18.93%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
-        <rect rx="4" ry="4" x="0" y="0" width="36" height="8" fill="#3178c6"/>
+        <rect rx="4" ry="4" x="0" y="0" width="38" height="8" fill="#3178c6"/>
       </svg>
     </g>
 
     <g transform="translate(0, 120)">
-      <text x="25" y="15" class="lang-name">Jupyter Notebook</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">2.25%</text>
-      <svg width="245" x="25" y="22">
-        <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
-        <rect rx="4" ry="4" x="0" y="0" width="4" height="8" fill="#DA5B0B"/>
-      </svg>
-    </g>
-
-    <g transform="translate(0, 160)">
       <text x="25" y="15" class="lang-name">Rust</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.78%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.86%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="3" height="8" fill="#dea584"/>
       </svg>
     </g>
 
+    <g transform="translate(0, 160)">
+      <text x="25" y="15" class="lang-name">Jupyter Notebook</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.49%</text>
+      <svg width="245" x="25" y="22">
+        <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
+        <rect rx="4" ry="4" x="0" y="0" width="3" height="8" fill="#DA5B0B"/>
+      </svg>
+    </g>
+
     <g transform="translate(0, 200)">
       <text x="25" y="15" class="lang-name">HTML</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.14%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.29%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#e34c26"/>
@@ -106,7 +106,7 @@
 
     <g transform="translate(0, 240)">
       <text x="25" y="15" class="lang-name">C</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.12%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.26%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#555555"/>
@@ -115,7 +115,7 @@
 
     <g transform="translate(0, 280)">
       <text x="25" y="15" class="lang-name">JavaScript</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.12%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.25%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#f1e05a"/>
@@ -124,7 +124,7 @@
 
     <g transform="translate(0, 320)">
       <text x="25" y="15" class="lang-name">CMake</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">0.75%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">0.85%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#DA3434"/>
@@ -133,7 +133,7 @@
 
     <g transform="translate(0, 360)">
       <text x="25" y="15" class="lang-name">KiCad Layout</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">0.57%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">0.65%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#2f4aab"/>
@@ -142,7 +142,7 @@
 
     <g transform="translate(0, 400)">
       <text x="25" y="15" class="lang-name">Java</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">0.54%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">0.62%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#b07219"/>
@@ -151,7 +151,7 @@
 
     <g transform="translate(0, 440)">
       <text x="25" y="15" class="lang-name">CSS</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">0.52%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">0.56%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#663399"/>
