@@ -89,7 +89,7 @@
 
   <g transform="translate(400, 110)">
     <circle cx="0" cy="0" r="40" class="rank-circle-bg"/>
-    <circle cx="0" cy="0" r="40" class="rank-circle" stroke-dasharray="251.2" stroke-dashoffset="138.3"/>
+    <circle cx="0" cy="0" r="40" class="rank-circle" stroke-dasharray="251.2" stroke-dashoffset="138.7"/>
     <text x="0" y="8" text-anchor="middle" class="rank-text">B</text>
   </g>
 </svg>
