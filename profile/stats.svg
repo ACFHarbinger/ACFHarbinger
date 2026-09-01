@@ -62,7 +62,7 @@
         <path d="M10.5 5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm.01 4.5A4.5 4.5 0 0115 14a.75.75 0 01-1.5 0 3 3 0 00-6 0 .75.75 0 01-1.5 0 4.5 4.5 0 014.51-4.5zM3.5 4a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
       </svg>
       <text x="25" y="12.5" class="stat bold">Total Commits:</text>
-      <text x="200" y="12.5" class="stat">8,008</text>
+      <text x="200" y="12.5" class="stat">8,198</text>
     </g>
     <g transform="translate(0, 50)">
       <svg x="0" y="0" width="16" height="16" viewBox="0 0 16 16" fill="#f8d000">
@@ -89,7 +89,7 @@
 
   <g transform="translate(400, 110)">
     <circle cx="0" cy="0" r="40" class="rank-circle-bg"/>
-    <circle cx="0" cy="0" r="40" class="rank-circle" stroke-dasharray="251.2" stroke-dashoffset="122.7"/>
+    <circle cx="0" cy="0" r="40" class="rank-circle" stroke-dasharray="251.2" stroke-dashoffset="122.6"/>
     <text x="0" y="8" text-anchor="middle" class="rank-text">B+</text>
   </g>
 </svg>
