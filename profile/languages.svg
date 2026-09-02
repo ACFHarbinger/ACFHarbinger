@@ -79,7 +79,7 @@
 
     <g transform="translate(0, 120)">
       <text x="25" y="15" class="lang-name">Rust</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.99%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">2.00%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="4" height="8" fill="#dea584"/>
