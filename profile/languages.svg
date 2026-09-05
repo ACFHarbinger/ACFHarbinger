@@ -52,7 +52,7 @@
   <g transform="translate(0, 55)">
     <g transform="translate(0, 0)">
       <text x="25" y="15" class="lang-name">C++</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">35.90%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">35.87%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="73" height="8" fill="#f34b7d"/>
@@ -61,7 +61,7 @@
 
     <g transform="translate(0, 40)">
       <text x="25" y="15" class="lang-name">Python</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">33.34%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">33.39%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="68" height="8" fill="#3572A5"/>
@@ -70,7 +70,7 @@
 
     <g transform="translate(0, 80)">
       <text x="25" y="15" class="lang-name">TypeScript</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">18.75%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">18.74%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="38" height="8" fill="#3178c6"/>
@@ -115,7 +115,7 @@
 
     <g transform="translate(0, 280)">
       <text x="25" y="15" class="lang-name">C</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.25%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.24%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#555555"/>
