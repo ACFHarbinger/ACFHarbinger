@@ -61,7 +61,7 @@
 
     <g transform="translate(0, 40)">
       <text x="25" y="15" class="lang-name">C++</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">32.38%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">32.36%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="66" height="8" fill="#f34b7d"/>
@@ -70,7 +70,7 @@
 
     <g transform="translate(0, 80)">
       <text x="25" y="15" class="lang-name">TypeScript</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">17.16%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">17.19%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="35" height="8" fill="#3178c6"/>
@@ -79,7 +79,7 @@
 
     <g transform="translate(0, 120)">
       <text x="25" y="15" class="lang-name">Rust</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">4.42%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">4.43%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="9" height="8" fill="#dea584"/>
@@ -133,7 +133,7 @@
 
     <g transform="translate(0, 360)">
       <text x="25" y="15" class="lang-name">KiCad Layout</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">0.57%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">0.56%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#2f4aab"/>
@@ -151,7 +151,7 @@
 
     <g transform="translate(0, 440)">
       <text x="25" y="15" class="lang-name">CSS</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">0.52%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">0.53%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#663399"/>
