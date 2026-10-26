@@ -52,25 +52,25 @@
   <g transform="translate(0, 55)">
     <g transform="translate(0, 0)">
       <text x="25" y="15" class="lang-name">Python</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">37.11%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">37.04%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
-        <rect rx="4" ry="4" x="0" y="0" width="76" height="8" fill="#3572A5"/>
+        <rect rx="4" ry="4" x="0" y="0" width="75" height="8" fill="#3572A5"/>
       </svg>
     </g>
 
     <g transform="translate(0, 40)">
       <text x="25" y="15" class="lang-name">C++</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">32.32%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">32.06%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
-        <rect rx="4" ry="4" x="0" y="0" width="66" height="8" fill="#f34b7d"/>
+        <rect rx="4" ry="4" x="0" y="0" width="65" height="8" fill="#f34b7d"/>
       </svg>
     </g>
 
     <g transform="translate(0, 80)">
       <text x="25" y="15" class="lang-name">TypeScript</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">17.22%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">17.50%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="35" height="8" fill="#3178c6"/>
@@ -79,7 +79,7 @@
 
     <g transform="translate(0, 120)">
       <text x="25" y="15" class="lang-name">Rust</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">4.44%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">4.55%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="9" height="8" fill="#dea584"/>
@@ -88,7 +88,7 @@
 
     <g transform="translate(0, 160)">
       <text x="25" y="15" class="lang-name">Jupyter Notebook</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.30%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.29%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#DA5B0B"/>
@@ -97,7 +97,7 @@
 
     <g transform="translate(0, 200)">
       <text x="25" y="15" class="lang-name">HTML</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.12%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.11%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#e34c26"/>
@@ -106,7 +106,7 @@
 
     <g transform="translate(0, 240)">
       <text x="25" y="15" class="lang-name">C</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.12%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.11%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#555555"/>
@@ -115,7 +115,7 @@
 
     <g transform="translate(0, 280)">
       <text x="25" y="15" class="lang-name">JavaScript</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.11%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.10%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#f1e05a"/>
@@ -142,7 +142,7 @@
 
     <g transform="translate(0, 400)">
       <text x="25" y="15" class="lang-name">Java</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">0.54%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">0.53%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#b07219"/>
