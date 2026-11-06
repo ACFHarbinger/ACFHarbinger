@@ -52,25 +52,25 @@
   <g transform="translate(0, 55)">
     <g transform="translate(0, 0)">
       <text x="25" y="15" class="lang-name">Python</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">39.44%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">39.52%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
-        <rect rx="4" ry="4" x="0" y="0" width="80" height="8" fill="#3572A5"/>
+        <rect rx="4" ry="4" x="0" y="0" width="81" height="8" fill="#3572A5"/>
       </svg>
     </g>
 
     <g transform="translate(0, 40)">
       <text x="25" y="15" class="lang-name">C++</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">30.25%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">30.21%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
-        <rect rx="4" ry="4" x="0" y="0" width="62" height="8" fill="#f34b7d"/>
+        <rect rx="4" ry="4" x="0" y="0" width="61" height="8" fill="#f34b7d"/>
       </svg>
     </g>
 
     <g transform="translate(0, 80)">
       <text x="25" y="15" class="lang-name">TypeScript</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">17.01%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">16.99%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="34" height="8" fill="#3178c6"/>
@@ -79,7 +79,7 @@
 
     <g transform="translate(0, 120)">
       <text x="25" y="15" class="lang-name">Rust</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">4.90%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">4.89%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="10" height="8" fill="#dea584"/>
@@ -97,7 +97,7 @@
 
     <g transform="translate(0, 200)">
       <text x="25" y="15" class="lang-name">HTML</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">1.05%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">1.04%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#e34c26"/>
@@ -133,7 +133,7 @@
 
     <g transform="translate(0, 360)">
       <text x="25" y="15" class="lang-name">KiCad Layout</text>
-      <text x="270" y="15" text-anchor="end" class="lang-pct">0.53%</text>
+      <text x="270" y="15" text-anchor="end" class="lang-pct">0.52%</text>
       <svg width="245" x="25" y="22">
         <rect rx="4" ry="4" x="0" y="0" width="245" height="8" fill="rgba(255,255,255,0.1)"/>
         <rect rx="4" ry="4" x="0" y="0" width="2" height="8" fill="#2f4aab"/>
